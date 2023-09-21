@@ -1,7 +1,5 @@
 package pers.tunan.cq.circulate;
 
-import java.util.Scanner;
-
 /**
  * @author Tunan
  * @version 1.0
@@ -10,16 +8,20 @@ import java.util.Scanner;
 public class P12015 {
     static class Main{
         public static void main(String[] args){
-            Scanner scanner = new Scanner(System.in);
-            int a = scanner.nextInt();
             int count = 0;
-            for (int i = 100; i <=1000; i++) {
-                int sum = i + a;
-                if (sum >= 1000) {
+            int num = 0;
+            // 在1*2 *3*…* 100 的积中
+            // 从右边数有多少个0
+            // 第 25 个数字是多少？
+            for (int i = 1; i <= 100; i++){
+                int temp = i;
+                while (temp % 5 == 0){
                     count++;
+                    temp /= 5;
                 }
+                num += count;
             }
-            System.out.println(count);
+            System.out.println(num);
         }
     }
 }

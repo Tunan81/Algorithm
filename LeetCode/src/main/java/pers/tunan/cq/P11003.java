@@ -8,7 +8,6 @@ import java.util.Scanner;
  * @date 2023/8/16
  */
 public class P11003 {
-    // todo
     static class Main {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
