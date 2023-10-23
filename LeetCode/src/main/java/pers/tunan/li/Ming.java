@@ -1,4 +1,4 @@
-package pers.tunan;
+package pers.tunan.li;
 
 import java.math.BigInteger;
 import java.util.Scanner;
