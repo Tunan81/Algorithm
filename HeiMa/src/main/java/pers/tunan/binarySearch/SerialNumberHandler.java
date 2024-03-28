@@ -12,9 +12,8 @@ public class SerialNumberHandler {
                 "1", "1.1", "1.1.1", "1.1.2", "1.1.3","1.1.3.1","1.1.3.1.1","1.1.3.1.1.1","1.1.4", "1.2", "2", "2.1", "2.1.1", "2.1.2", "2.2","3","4"
         );
         String num = "1.1★";
-        if(num.charAt(num.length()-1)=='★'){;
-            num=num.substring(0,num.length()-1);
-        }
+        ;
+        num=num.substring(0,num.length()-1);
         int length = num.length();
         String finalNum = num;
         Optional<String> first = serialNumbers.stream()
